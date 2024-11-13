@@ -11,7 +11,7 @@ const home = () => {
             With Identity, you can improve customer sign-ups, employee productivity, and get apps to market faster.
         </p>
         <div className="flex gap-4">
-            <button className="bg-slate-100 text-black rounded-3xl px-7 py-3">Free trial</button>
+            <button className="bg-white text-black rounded-3xl px-7 py-3">Free trial</button>
             <button className="bg-blue-600 text-white rounded-3xl px-7 py-3 border border-white">Talk to us</button>
         </div>
     </div>
