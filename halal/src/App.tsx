@@ -1,10 +1,11 @@
 import React from 'react'
 import { Button } from './components/ui/button'
+import Home from './components/Home'
 
 const App = () => {
   return (
     <div>
-      <Button>Click me</Button>
+    <Home/>
     </div>
   )
 }
