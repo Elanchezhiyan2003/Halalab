@@ -5,7 +5,11 @@ import Home from './components/Home'
 const App = () => {
   return (
     <div>
+<<<<<<< HEAD
     <Home/>
+=======
+      
+>>>>>>> main
     </div>
   )
 }
