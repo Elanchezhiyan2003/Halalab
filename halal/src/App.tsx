@@ -10,10 +10,9 @@ import Home from './components/Home'
 const App = () => {
   return (
     <div>
-
       <Header/>
+      <Home/>
       <Footer/>
-    <Home/>
     </div>
   )
 }
