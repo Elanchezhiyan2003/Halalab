@@ -1,6 +1,6 @@
 import React from 'react';
 import phoneIcon from "../assets/phone.png";
-import emailIcon from "../assets/mail.png";
+// import emailIcon from "../assets/mail.png";
 
 const Footer: React.FC = () => {
   return (
@@ -13,12 +13,16 @@ const Footer: React.FC = () => {
           <p className="text-sm">Superchat - The name says it all</p>
           <div className="space-y-2">
             <div className="flex items-center space-x-2">
-            <span> <img src={phoneIcon} alt="phone" className="w-5 h-5" />
+            <span> <img 
+            // src={phoneIcon} 
+            alt="phone" className="w-5 h-5" />
              </span><pre>Phone</pre>
              <a href="tel:+441224051727" className="hover:underline">+44 1224 051727</a>
             </div>
             <div className="flex items-center space-x-2">
-              <img src={emailIcon} alt="email" className="w-5 h-5" />
+              <img 
+              // src={emailIcon} 
+              alt="email" className="w-5 h-5" />
               <a href="mailto:hello@superchat.com" className="hover:underline">hello@superchat.com</a>
             </div>
           </div>

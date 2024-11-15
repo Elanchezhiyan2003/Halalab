@@ -1,7 +1,7 @@
 import React from 'react';
-import downArrowIcon from "../assets/down.png";
-import logoImage from "../assets/logo.jpg";
-import rightArrowIcon from "../assets/right.png";
+// import downArrowIcon from "../assets/down.png";
+// import logoImage from "../assets/logo.jpg";
+// import rightArrowIcon from "../assets/right.png";
 const Header: React.FC = () => {
   return (
     <div>
@@ -10,7 +10,7 @@ const Header: React.FC = () => {
         <div className="flex items-center">
           <a href="/">
             <img
-              src={logoImage}
+              // src={logoImage}
               alt="Halal Lab Logo"
               className="w-6 h-6 mr-2" // Set size for the logo (adjust as needed)
             />
@@ -23,7 +23,7 @@ const Header: React.FC = () => {
             <button className="font-medium hover:text-gray-900 flex items-center">
               Cards
               <img
-                src={downArrowIcon}
+                // src={downArrowIcon}
                 alt="Dropdown Arrow"
                 className="w-12px h-12px ml-2"
               />
@@ -51,7 +51,7 @@ const Header: React.FC = () => {
         Apply Now
         {/* Right Arrow Icon */}
         <img
-          src={rightArrowIcon}
+          // src={rightArrowIcon}
           alt="Right Arrow"
           className="w-2 h-2 ml-2"
         />
