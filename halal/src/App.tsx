@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from './components/ui/button'
+import PUBLIC from '@/components/public'
 
 import Footer from './components/footer'
 import Header from './components/header'
@@ -14,6 +15,7 @@ const App = () => {
       <Header/>
     <Home/>
     <Aboutus/>
+    <PUBLIC/>
       <Footer/>
     </div>
   )

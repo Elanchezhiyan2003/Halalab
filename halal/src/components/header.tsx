@@ -1,5 +1,7 @@
 import React from 'react';
-// import downArrowIcon from "../assets/down.png";
+import downArrowIcon from "../assets/down.png";
+import Logo from '@/assets/logo.jpg'
+import { Button } from './ui/button';
 // import logoImage from "../assets/logo.jpg";
 // import rightArrowIcon from "../assets/right.png";
 const Header: React.FC = () => {
@@ -10,9 +12,9 @@ const Header: React.FC = () => {
         <div className="flex items-center">
           <a href="/">
             <img
-              // src={logoImage}
+              src={Logo}
               alt="Halal Lab Logo"
-              className="w-6 h-6 mr-2" // Set size for the logo (adjust as needed)
+              className="w-6 h-6 mr-2 rounded-2xl" // Set size for the logo (adjust as needed)
             />
           </a>
           <span className="text-lg font-semibold text-gray-900">Halal_Lab</span>
@@ -21,12 +23,10 @@ const Header: React.FC = () => {
         <nav className="flex items-center space-x-8">
           <div className="relative group flex items-center">
             <button className="font-medium hover:text-gray-900 flex items-center">
-              Cards
-              <img
-                // src={downArrowIcon}
-                alt="Dropdown Arrow"
-                className="w-12px h-12px ml-2"
-              />
+              Cards <span>
+                <select name="" id="">
+                </select>
+              </span>
             </button>
             </div>
             {/* Dropdown placeholder */}<div>
@@ -48,13 +48,8 @@ const Header: React.FC = () => {
           </a>
           <div>
       <button className="px-4 py-2 bg-black text-white font-medium rounded-full hover:bg-gray-800 flex items-center">
-        Apply Now
+        Apply Now <span className='mx-2'>{'>'}</span>
         {/* Right Arrow Icon */}
-        <img
-          // src={rightArrowIcon}
-          alt="Right Arrow"
-          className="w-2 h-2 ml-2"
-        />
       </button>
     </div>
           </div>
