@@ -4,7 +4,7 @@ import homeimg from '@/assets/home.png'
 
 const home = () => {
   return (
-<div className="h-96 w-full flex items-center bg-blue-600">
+<div className="h-96 w-full flex items-center my-20  bg-blue-600">
     <div className="w-9/12 p-8 mx-5 flex flex-col justify-center max-w-md">
         <h1 className="text-white text-5xl font-bold mb-4">Start with your identity</h1>
         <p className="text-white font-medium mb-6">
