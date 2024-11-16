@@ -14,7 +14,6 @@ const App = () => {
       <Header/>
     <Home/>
     <Aboutus/>
-      <Home/>
       <Footer/>
     </div>
   )
