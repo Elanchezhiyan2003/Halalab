@@ -4,7 +4,7 @@ import AboutB from '@/assets/aboutb.png'
 import AboutC from '@/assets/aboutc.png'
 const aboutus = () => {
   return (
-    <div className='bg-white mx-14 h-full'>
+    <div className='bg-white py-4 mx-14 h-full p-4'>
         <div className='flex justify-between mx-3 my-14' >
             <h1 className='text-black text-4xl'>About us</h1>
             <div className='flex gap-x-2'>
