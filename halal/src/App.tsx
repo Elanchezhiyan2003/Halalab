@@ -1,22 +1,30 @@
-import React from 'react'
-import { Button } from './components/ui/button'
+import React from "react";
+import Header from "./components/header"; 
+import Footer from "./components/footer";
+import Home from "./components/Home";
+import Aboutus from "./components/aboutus";
+import AutomationToolbox from "./components/AutomationToolbox"; 
+import Testimonials from './components/Testimonials/Testimonials';
 
-import Footer from './components/footer'
-import Header from './components/header'
 
-import Home from './components/Home'
-import Aboutus from './components/aboutus'
-
-
-const App = () => {
+const App: React.FC = () => {
   return (
     <div>
-      <Header/>
-    <Home/>
-    <Aboutus/>
-      <Footer/>
+      {/* Header */}
+      <Header />
+
+      {/* Main Content */}
+      <main>
+        <Home />
+        <Aboutus />
+        <AutomationToolbox />
+        <Testimonials />
+      </main>
+
+      {/* Footer */}
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default App;
