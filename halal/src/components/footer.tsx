@@ -1,8 +1,6 @@
 import React from 'react';
 import phoneIcon from "../assets/phone.png";
 import Logo from '@/assets/logo.jpg'
-
-
 const Footer: React.FC = () => {
   return (
     <footer className="bg-blue-800 xl:container xl:mx-auto text-white py-10">
