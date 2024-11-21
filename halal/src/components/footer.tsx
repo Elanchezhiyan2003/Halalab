@@ -1,5 +1,6 @@
 import React from 'react';
 import phoneIcon from "../assets/phone.png";
+import Logo from '@/assets/logo.jpg'
 
 
 const Footer: React.FC = () => {
@@ -9,7 +10,18 @@ const Footer: React.FC = () => {
 
 
         <div className="space-y-4">
-          <div className="text-lg font-semibold">Halal_Lab</div>
+          <div className="text-lg font-semibold"> <span><div className="flex items-center">
+            <a href="/">
+              <img
+                src={Logo}
+                alt="Halal Lab Logo"
+                className="w-6 h-6 mr-2 rounded-2xl"
+              />
+            </a>
+            <span style={{ fontFamily: 'Ramabhadra, sans-serif' }} className="text-lg font-semibold text-white">Halal_Lab</span>
+          </div>
+          </span>
+          </div>
           <p className="text-sm">Superchat - The name says it all</p>
           <div className="space-y-2">
             <div className="flex items-center space-x-2">

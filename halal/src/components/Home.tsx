@@ -1,11 +1,12 @@
 import React from 'react';
 import homeimg from '@/assets/home.png';
+import Before from '@/assets/before.png'
 
 const Home = () => {
   return (
 
-    <div className="flex items-center justify-center mt-20 xl:container xl:mx-auto max-h-screen">
-      <div className="bg-blue-500 shadow-lg p-8 flex flex-col md:flex-row items-center">
+    <div className="flex  justify-center mt-20  ">
+      <div className="bg-blue-500 shadow-lg p-8 flex flex-col md:flex-row xl:container items-center">
         <div className="text-white md:w-1/2">
           <h1 className="text-white  font-aeonik font-medium text-[64px] leading-[72px]  mb-6 tracking-tight">Start with your<br></br> identity</h1>
           <p className="text-white w-[30rem] text-base lg:text-xl font-helvetica  mb-8">With Identity, you can improve customer sign-ups, employee productivity, and get apps to market <br></br>faster.</p>
@@ -15,7 +16,8 @@ const Home = () => {
           </div>
         </div>
         <div className="md:w-1/2 mt-8 md:mt-0">
-          <img src={homeimg} alt="Person holding a phone" className="rounded-lg shadow-lg" />
+          <img src={homeimg} alt="Person holding a phone" className=" z-0rounded-lg shadow-lg" />
+          {/* <img src={Before} alt="" className='absolute size-30' /> */}
         </div>
       </div>
     </div>

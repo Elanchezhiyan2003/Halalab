@@ -7,7 +7,6 @@ const Header: React.FC = () => {
   return (
     <div className='xl:container xl:mx-auto'>
       <header className="flex items-center justify-between p-4 bg-white shadow-md fixed w-full xl:left-470 xl:container xl:place-self-center xl:mx-auto top-0 z-10 ">
-
         <div className="flex items-center">
           <a href="/">
             <img
@@ -30,8 +29,10 @@ const Header: React.FC = () => {
             <button className="font-helvetica font-medium text-[16px] leading-[24px] tracking-[-0.01em] hover:text-gray-900 flex items-center">
               Cards
               <span>
-                <select name="" id="" className="ml-2">
-                </select>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-4 m-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+</svg>
+
               </span>
             </button>
 
