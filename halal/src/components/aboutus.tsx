@@ -4,9 +4,9 @@ import AboutB from '@/assets/aboutb.png'
 import Marketing from "@/assets/marketing.png"
 import AboutC from '@/assets/aboutc.png'
 import { Button } from './ui/button'
-const aboutus = () => {
+const Aboutus = () => {
   return (
-    <div className='bg-white mx-14 -my-36 h-full xl:container xl:mx-auto py-32'>
+    <div className='bg-white  mx-14 -my-36 h-full xl:container xl:mx-auto py-32'>
       <div className='flex justify-between mx-3 my-14' >
         <h1 className='text-black text-4xl'>About us</h1>
         <div className='flex gap-x-2'>
@@ -16,21 +16,10 @@ const aboutus = () => {
             </svg>
           </Button>
           <Button className='text-black pb-4  px-2 py-2 w-8 h-8 border-2 border-opacity-70 border-black rounded-black rounded-3xl bg-white'>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
             </svg>
-
           </Button>
-
-
-    <div className='bg-white py-4 mx-14 h-full p-4'>
-        <div className='flex justify-between mx-3 my-14' >
-            <h1 className='text-black text-4xl'>About us</h1>
-            <div className='flex gap-x-2'>
-            <a href="" className='text-black pb-4  px-2 w-8 h-8 border-2 border-black rounded-black rounded-3xl bg-white'>{'>'}</a>
-            <a href="" className='text-black pb-4  px-2 w-8 h-8 border-2 border-black rounded-black rounded-3xl bg-white'>{'<'}</a>
-            </div>
-
         </div>
       </div>
       <div className='flex-box flex gap-x-4 rounded-2xl'>
@@ -56,8 +45,8 @@ const aboutus = () => {
           </p>
         </div>
       </div>
+
     </div>
   )
 }
-
-export default aboutus;
+export default Aboutus;
