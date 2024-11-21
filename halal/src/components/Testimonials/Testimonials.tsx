@@ -53,9 +53,9 @@ const Testimonials: React.FC = () => {
   ];
 
   return (
-    <section className="bg-gray-50 py-12">
+    <section className="bg-gray-50 py-12 xl:container xl:mx-auto">
       {/* Header Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+      <div className="max-w-7xl -mt-44 mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
         {/* Title and Subtitle */}
         <div className="text-center md:text-left">
           <h2 className="text-3xl font-bold text-gray-900">

@@ -16,8 +16,8 @@ const App: React.FC = () => {
       <Header/>
       <Home />
       <Aboutus />
-      <PUBLIC/>
       <AutomationToolbox />
+      <PUBLIC/>
       <Testimonials />
       <Footer />
     </div>
