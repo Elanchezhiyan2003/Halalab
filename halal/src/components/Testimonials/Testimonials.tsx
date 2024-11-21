@@ -8,7 +8,7 @@ const Testimonials: React.FC = () => {
       company: "easyApotheke Duderstadt",
       image: adrianImage,
 
-      
+
     },
     {
       text: "We can map our entire sales process in Superchat's messaging software. We have a separate mailbox for each phase. That makes our work clear.",
@@ -54,9 +54,9 @@ const Testimonials: React.FC = () => {
 
   return (
     <section className="bg-gray-50 py-12 xl:container xl:mx-auto">
-      {/* Header Section */}
+
       <div className="max-w-7xl -mt-44 mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
-        {/* Title and Subtitle */}
+
         <div className="text-center md:text-left">
           <h2 className="text-3xl font-bold text-gray-900">
             You are in good company
@@ -67,7 +67,7 @@ const Testimonials: React.FC = () => {
           </p>
         </div>
 
-        {/* Button */}
+
         <div className="mt-4 md:mt-0">
           <button className="bg-white border border-gray-300 text-gray-700 px-6 py-2 rounded-full shadow-sm hover:bg-gray-100 transition">
             More success stories
@@ -75,7 +75,7 @@ const Testimonials: React.FC = () => {
         </div>
       </div>
 
-      {/* Testimonials Grid */}
+
       <div className="mt-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {testimonials.map((testimonial, index) => (
           <div
@@ -88,7 +88,7 @@ const Testimonials: React.FC = () => {
                 {testimonial.author}
               </h3>
               <p className="text-gray-500">{testimonial.company}</p>
-              
+
             </div>
           </div>
         ))}
