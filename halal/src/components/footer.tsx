@@ -1,6 +1,6 @@
 import React from 'react';
 import phoneIcon from "../assets/phone.png";
-// import emailIcon from "../assets/mail.png";
+
 
 const Footer: React.FC = () => {
   return (
