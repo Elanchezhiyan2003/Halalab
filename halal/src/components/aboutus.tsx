@@ -22,6 +22,15 @@ const aboutus = () => {
 
           </Button>
 
+
+    <div className='bg-white py-4 mx-14 h-full p-4'>
+        <div className='flex justify-between mx-3 my-14' >
+            <h1 className='text-black text-4xl'>About us</h1>
+            <div className='flex gap-x-2'>
+            <a href="" className='text-black pb-4  px-2 w-8 h-8 border-2 border-black rounded-black rounded-3xl bg-white'>{'>'}</a>
+            <a href="" className='text-black pb-4  px-2 w-8 h-8 border-2 border-black rounded-black rounded-3xl bg-white'>{'<'}</a>
+            </div>
+
         </div>
       </div>
       <div className='flex-box flex gap-x-4 rounded-2xl'>
