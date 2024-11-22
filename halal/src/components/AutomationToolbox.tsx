@@ -7,7 +7,7 @@ import LayerMaskIcon from "/src/assets/layer-mask-01.png";
 const AutomationToolbox: React.FC = () => {
   return (
     <div
-      className="flex flex-col lg:flex-row items-center  bg-gray-50 p-8 lg:p-16 gap-8 xl:container xl:mx-auto"
+      className="flex flex-col lg:flex-row items-center mt-10  bg-gray-50 p-8 lg:p-16 gap-8 xl:container xl:mx-auto"
       style={{ background: "#F7F8FA" }}
     >
 
@@ -63,11 +63,11 @@ const AutomationToolbox: React.FC = () => {
       </div>
 
 
-      <div className="lg:w-1/2 flex justify-center items-stretch">
+      <div className="lg:w-[40rem]  h-[30rem] mt-40 flex justify-center  items-stretch">
         <img
           src={personImage}
           alt="Professional person"
-          className="rounded-lg shadow-lg w-full max-w-sm"
+          className="rounded-lg w-[30rem] mt-5  shadow-lg size-9/12  max-w-sm object-fill"
           style={{
             alignSelf: "flex-start",
             height: "calc(100% - 45px)",

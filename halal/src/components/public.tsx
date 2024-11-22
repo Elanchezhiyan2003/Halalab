@@ -3,7 +3,7 @@ import PublicA from '@/assets/public.png'
 
 const Public = () => {
   return (
-    <div className='flex mx-40 my-10 xl:container xl:mx-auto'>
+    <div className='flex mx-40 mt-10 xl:container xl:mx-auto'>
       <div>
         <img className=' rounded-lg h-3/4' src={PublicA} alt="" />
       </div>
@@ -23,7 +23,7 @@ const Public = () => {
             and local government and education institution
             `}
         </p>
-        <a href="" className='underline text-base font-helvetica py-5'>Learn more</a>
+        <a href="" className='underline text-base font-helvetica'>Learn more</a>
       </div>
     </div>
   )

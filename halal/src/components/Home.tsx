@@ -16,7 +16,7 @@ const Home = () => {
           </div>
         </div>
         <div className="md:w-1/2 mt-8 md:mt-0">
-          <img src={homeimg} alt="Person holding a phone" className=" z-0rounded-lg shadow-lg" />
+          <img src={homeimg} alt="Person holding a phone" className=" border-4 rounded-lg shadow-lg" />
           {/* <img src={Before} alt="" className='absolute size-30' /> */}
         </div>
       </div>
