@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Profile1 from '@/assets/profiles/profile-1.png';
