@@ -1,9 +1,9 @@
-import React from 'react';
+// import React from 'react';
 import personImage from "/src/assets/image762.png";
-import ChatImage from "/src/assets/chatting-01.png";
-import CheckIcon from "/src/assets/div.mr-3.png";
-import InLoveIcon from "/src/assets/in-love.png";
-import LayerMaskIcon from "/src/assets/layer-mask-01.png";
+// import ChatImage from "/src/assets/chatting-01.png";
+// import CheckIcon from "/src/assets/div.mr-3.png";
+// import InLoveIcon from "/src/assets/in-love.png";
+// import LayerMaskIcon from "/src/assets/layer-mask-01.png";
 import FeatureItem from '@/components/FeatureItem';
 
 function App() {

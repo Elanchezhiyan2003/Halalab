@@ -1,6 +1,6 @@
-import React from 'react';
+// import React from 'react';
 import AboutA from '@/assets/abouta.png';
-import AboutB from '@/assets/aboutb.png';
+// import AboutB from '@/assets/aboutb.png';
 import Marketing from "@/assets/marketing.png";
 import AboutC from '@/assets/aboutc.png';
 import { Button } from './ui/button';
