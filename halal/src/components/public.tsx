@@ -1,32 +1,63 @@
-import React from 'react'
-import PublicA from '@/assets/public.png'
+import React from 'react';
+import { ChevronRight } from 'lucide-react';
+import PublicA from '@/assets/public.png';
 
-const Public = () => {
+const industries = [
+  'Public Sector',
+  'Retail',
+  'Financial Services',
+  'Healthcare',
+  'Travel + Hospitality',
+  'Technology',
+  'Energy',
+  'Nonprofit'
+];
+
+function Public() {
   return (
-    <div className='flex mx-40 mt-10 xl:container xl:mx-auto'>
-      <div>
-        <img className=' rounded-lg h-3/4' src={PublicA} alt="" />
-      </div>
-      <div className=' my-8 font-helvetica'>
-        <p>The Identity solution for every industry</p>
-        <h1 className='text-black text-5xl mt-5 font-aeonik'>Public sector</h1>
-        <h1 className="flex flex-col text-justify gap-y-0 w-30 my-8 xl:gap-y-12 text-3xl space-y-2 text-slate-500">
-          <span className='font-aeonik'>Retail</span>
-          <span className='font-aeonik'>Financial Service</span>
-          <span className='font-aeonik'>Healthcare</span>
-          <span className='font-aeonik'>Travel + Hospital</span>
-          <span className='font-aeonik'>Technology</span>
-          <span className='font-aeonik'>Energy</span>
-          <span className='font-aeonik'>Nonprofit</span>
-        </h1>
-        <p className='w-96 py-5 text-md space-y-2 font-helvetica'>{`See how Okta delivers a secure Identity for central
-            and local government and education institution
-            `}
-        </p>
-        <a href="" className='underline text-base font-helvetica'>Learn more</a>
+    <div className=" bg-white">
+      <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+          <div className="relative rounded-2xl overflow-hidden bg-[#f5f3e8]">
+            <img
+              src={PublicA}
+              alt="Professional in business attire"
+              className="w-full h-auto object-cover rounded-2xl"
+            />
+          </div>
+
+
+          <div className="space-y-8">
+            <p className="text-gray-600 text-lg font-medium">
+              The Identity solution for every industry
+            </p>
+
+            <div className="space-y-6">
+              {industries.map((industry, index) => (
+                <div
+                  key={index}
+                  className={`text-2xl ${index === 0 ? 'text-gray-900 font-semibold' : 'text-gray-500 hover:text-gray-700 transition-colors'
+                    }`}
+                >
+                  {industry}
+                </div>
+              ))}
+            </div>
+
+            <div className="space-y-4 pt-4">
+              <p className="text-gray-600">
+                See how Okta delivers a secure Identity for central and local government and educational institutions.
+              </p>
+              <button className="inline-flex items-center text-black font-semibold underline hover:text-blue-700 transition-colors">
+                Learn more
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Public;

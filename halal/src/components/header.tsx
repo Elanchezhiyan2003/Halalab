@@ -1,69 +1,109 @@
-import React from 'react';
-import downArrowIcon from "../assets/down.png";
-import Logo from '@/assets/logo.jpg'
-import { Button } from './ui/button';
+import React, { useState } from 'react';
+import Logo from '@/assets/logo.jpg';
+import { Button } from '@/components/ui/button';
+import { ChevronDown, ChevronRight } from 'lucide-react';
 
 const Header: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <div className='xl:container xl:mx-auto'>
-      <header className="flex items-center justify-between p-4 bg-white shadow-md fixed w-full xl:left-470 xl:container xl:place-self-center xl:mx-auto top-0 z-10 ">
-        <div className="flex items-center">
-          <a href="/">
-            <img
-              src={Logo}
-              alt="Halal Lab Logo"
-              className="w-6 h-6 mr-2 rounded-2xl"
-            />
-          </a>
-          <span style={{ fontFamily: 'Ramabhadra, sans-serif' }} className="text-lg font-semibold text-gray-900">Halal_Lab</span>
-        </div>
-        <div>
-          <nav className="flex items-center space-x-8">
-            <div className="relative group flex items-center">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
+      <div className="xl:container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          <div className="flex items-center">
+            <a href="/" className="flex items-center space-x-2">
+              <img src={Logo} alt="Halal Lab Logo" className="h-6 rounded-2xl" />
+              <span className="font-semibold text-lg">Halal_Lab</span>
+            </a>
+          </div>
+
+          <nav className="hidden md:flex items-center space-x-8">
+            <div className="relative group">
+              <button className="flex items-center space-x-1 text-sm font-medium text-gray-700 hover:text-gray-900">
+                <span>Cards</span>
+                <ChevronDown className="h-4 w-4" />
+              </button>
             </div>
-            <div>
-              <div className="absolute hidden group-hover:block mt-2 bg-white border border-gray-200 shadow-lg rounded">
-
-              </div>
-            </div>
-            <button className="font-helvetica font-medium text-[16px] leading-[24px] tracking-[-0.01em] hover:text-gray-900 flex items-center">
-              Cards
-              <span>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-4 m-2">
-  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-</svg>
-
-              </span>
-            </button>
-
-            <a href="#" className="font-helvetica font-medium text-[16px] leading-[24px] tracking-[-0.01em] hover:text-gray-900">
+            <a href="#" className="text-sm font-medium text-gray-700 hover:text-gray-900">
               About
             </a>
-
-            <a href="#" className="font-helvetica font-medium text-[16px] leading-[24px] tracking-[-0.01em] hover:text-gray-900">
+            <a href="#" className="text-sm font-medium text-gray-700 hover:text-gray-900">
               App
             </a>
-
           </nav>
+
+          <div className="hidden md:flex items-center space-x-6">
+            <a href="#" className="text-sm font-medium text-gray-700 hover:text-gray-900">
+              Login
+            </a>
+            <Button className="bg-black hover:bg-gray-800 text-white rounded-full flex items-center px-4 py-2">
+              <span>Apply now</span>
+              <ChevronRight className="h-4 w-4 ml-2" />
+            </Button>
+          </div>
+
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden p-2 rounded-md text-gray-700 hover:text-gray-900 focus:outline-none"
+            aria-label="Toggle menu"
+          >
+            <svg
+              className="h-6 w-6"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              {isMenuOpen ? (
+                <path d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
         </div>
-        <div className='flex gap-x-6 items-center'>
-          <a href="#" className="font-aeonik font-medium text-[16px] leading-[24px] tracking-[-0.01em] hover:text-gray-900">
+      </div>
+
+      <div
+        className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} border-t border-gray-200`}
+      >
+        <div className="px-4 pt-2 pb-3 space-y-1 bg-white">
+          <div className="py-2">
+            <button className="flex items-center w-full text-sm font-medium text-gray-700 hover:text-gray-900">
+              <span>Cards</span>
+              <ChevronDown className="h-4 w-4 ml-1" />
+            </button>
+          </div>
+          <a
+            href="#"
+            className="block py-2 text-sm font-medium text-gray-700 hover:text-gray-900"
+          >
+            About
+          </a>
+          <a
+            href="#"
+            className="block py-2 text-sm font-medium text-gray-700 hover:text-gray-900"
+          >
+            App
+          </a>
+          <a
+            href="#"
+            className="block py-2 text-sm font-medium text-gray-700 hover:text-gray-900"
+          >
             Login
           </a>
-
-          <div className='flex gap-x-4 '>
-            <Button className=' bg-black rounded-3xl'>
-              Apply now <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                </svg>
-
-              </span>
+          <div className="pt-2">
+            <Button className="w-full bg-black hover:bg-gray-800 text-white rounded-full flex items-center justify-center px-4 py-2">
+              <span>Apply now</span>
+              <ChevronRight className="h-4 w-4 ml-2" />
             </Button>
           </div>
         </div>
-      </header>
-    </div>
+      </div>
+    </header>
+
   );
 };
 

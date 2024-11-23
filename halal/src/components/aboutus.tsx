@@ -1,52 +1,74 @@
-import React from 'react'
-import AboutA from '@/assets/abouta.png'
-import AboutB from '@/assets/aboutb.png'
-import Marketing from "@/assets/marketing.png"
-import AboutC from '@/assets/aboutc.png'
-import { Button } from './ui/button'
+import React from 'react';
+import AboutA from '@/assets/abouta.png';
+import AboutB from '@/assets/aboutb.png';
+import Marketing from "@/assets/marketing.png";
+import AboutC from '@/assets/aboutc.png';
+import { Button } from './ui/button';
+
 const Aboutus = () => {
   return (
-    <div className='bg-white  mx-14 -my-36 h-full xl:container xl:mx-auto py-32'>
-      <div className='flex justify-between mx-3 my-14' >
-        <h1 className='text-black text-4xl'>About us</h1>
-        <div className='flex gap-x-2'>
-          <Button className='text-black pb-4  px-2 py-2 w-8 h-8 border-2 border-opacity-70 border-black rounded-black rounded-3xl bg-white'>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-4">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+    <div className="bg-white px-6 sm:px-10 md:px-14 xl:container xl:mx-auto py-16 sm:py-20">
+      <div className="flex justify-between items-center mb-10">
+        <h1 className="text-black text-2xl sm:text-3xl md:text-4xl font-bold">About us</h1>
+        <div className="flex gap-2">
+          <Button className="text-black px-2 py-2 w-10 h-10 border-2 border-opacity-70 border-black rounded-full bg-white flex items-center justify-center hover:bg-gray-100">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
           </Button>
-          <Button className='text-black pb-4  px-2 py-2 w-8 h-8 border-2 border-opacity-70 border-black rounded-black rounded-3xl bg-white'>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+          <Button className="text-black px-2 py-2 w-10 h-10 border-2 border-opacity-70 border-black rounded-full bg-white flex items-center justify-center hover:bg-gray-100">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
             </svg>
           </Button>
-        </div>
-      </div>
-      <div className='flex-box flex gap-x-4 rounded-2xl'>
-        <div className=' bg-blue-500 bg-opacity-5 py-2 rounded-lg'>
-          <img className=' p-4  w-[136rem]  rounded-3xl' src={AboutA} alt="" />
-          <h1 className='p-3 text-black font-bold'>Sales</h1>
-          <p className='px-3 text-slate-00 py-2'>Boost your sales performance with Superchat.
-            Automate processes, qualify your leads ands
-          </p>
-        </div>
-        <div className='bg-blue-500 bg-opacity-5   px-4 rounded-lg'>
-          <img className='  p-4 my-2  w-[125rem]  rounded-3xl' src={Marketing} alt="" />
-          <h1 className='p-3 text-black font-bold ' >Marketing</h1>
-          <p className='px-3 text-slate-00 '>Boost your sales performance with Superchat.
-            Automate processes, qualify your leads ands
-          </p>
-        </div>
-        <div className='bg-blue-500 bg-opacity-5 py-2 rounded-lg'>
-          <img className='size-auto p-4   w-[126rem] object-fill rounded-3xl' src={AboutC} alt="" />
-          <h1 className='p-3 text-black font-bold ' >Support</h1>
-          <p className='px-3 text-slate-00 py-2'>Boost your sales performance with Superchat.
-            Automate processes, qualify your leads ands
-          </p>
         </div>
       </div>
 
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="bg-blue-500 bg-opacity-5 rounded-lg overflow-hidden shadow-md">
+          <img
+            className="w-full h-48 object-cover"
+            src={AboutA}
+            alt="Sales"
+          />
+          <div className="p-4">
+            <h2 className="text-black font-bold text-lg">Sales</h2>
+            <p className="text-gray-600 mt-2">
+              Boost your sales performance with Superchat. Automate processes, qualify your leads, and drive results.
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-blue-500 bg-opacity-5 rounded-lg overflow-hidden shadow-md">
+          <img
+            className="w-full h-48 object-cover"
+            src={Marketing}
+            alt="Marketing"
+          />
+          <div className="p-4">
+            <h2 className="text-black font-bold text-lg">Marketing</h2>
+            <p className="text-gray-600 mt-2">
+              Boost your marketing campaigns with Superchat. Automate workflows and reach the right audience effectively.
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-blue-500 bg-opacity-5 rounded-lg overflow-hidden shadow-md">
+          <img
+            className="w-full h-48 object-cover"
+            src={AboutC}
+            alt="Support"
+          />
+          <div className="p-4">
+            <h2 className="text-black font-bold text-lg">Support</h2>
+            <p className="text-gray-600 mt-2">
+              Enhance customer support with Superchat. Automate responses, streamline communication, and build loyalty.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
+
 export default Aboutus;
