@@ -1,6 +1,5 @@
 import React from 'react';
 import { Clock, Users, MessageCircle, UserCheck } from 'lucide-react';
-
 interface FeatureItemProps {
   icon: 'clock' | 'users' | 'message' | 'recruitment';
   title: string;
