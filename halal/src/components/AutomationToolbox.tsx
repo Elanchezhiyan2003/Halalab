@@ -23,7 +23,7 @@ function App() {
           <div className="space-y-6 ">
             <div className='bg-white rounded-lg py-1'>
               <FeatureItem
-                icon="clock"
+                icon="timer"
                 title="Sales support around the clock."
                 description="Automate your sales process by requesting important information in advance and automatically assigning leads to the appropriate contacts."
                 isExpanded={true}
@@ -31,19 +31,19 @@ function App() {
             </div>
             <div className='p-5 bg-white'>
               <FeatureItem
-                icon="users"
+                icon="layermask"
                 title="Easily segment your WhatsApp newsletter subscribers."
               />
             </div>
             <div className='bg-white p-5'>
               <FeatureItem
-                icon="message"
+                icon="inlove"
                 title="Automations that support your customer service."
               />
             </div>
             <div className='bg-white p-5'>
               <FeatureItem
-                icon="recruitment"
+                icon="chating"
                 title="Automated recruitment processes via WhatsApp."
               />
             </div>
